@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hubx — імпортер Autel, DJI, Starlink та супутнього обладнання для військових частин, фондів, державних і комерційних організацій." />
+  <title>Hubx — Імпорт Autel, DJI, Starlink для офіційних закупівель</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="site-header" data-testid="site-header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" data-testid="logo-link" aria-label="Hubx — на головну">
+        <span class="logo__mark">[</span>Hubx<span class="logo__mark">]</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" data-testid="primary-nav" aria-label="Головна навігація">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about" data-testid="nav-about">Хто ми</a></li>
+          <li><a class="nav__link" href="#supply" data-testid="nav-supply">Що постачаємо</a></li>
+          <li><a class="nav__link" href="#audience" data-testid="nav-audience">Для кого</a></li>
+          <li><a class="nav__link" href="#reviews" data-testid="nav-reviews">Відгуки</a></li>
+          <li><a class="nav__link" href="#prozorro" data-testid="nav-prozorro">Prozorro</a></li>
+          <li><a class="nav__link" href="#contacts" data-testid="nav-contacts">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="btn btn--solid btn--sm header__cta" data-open-popup data-testid="header-cta-btn">
+          Надіслати запит
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </button>
+        <button type="button" class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu" data-testid="burger-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" data-testid="mobile-menu" aria-hidden="true">
+      <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
+        <a class="mobile-menu__link" href="#about" data-testid="m-nav-about">Хто ми</a>
+        <a class="mobile-menu__link" href="#supply" data-testid="m-nav-supply">Що постачаємо</a>
+        <a class="mobile-menu__link" href="#audience" data-testid="m-nav-audience">Для кого</a>
+        <a class="mobile-menu__link" href="#reviews" data-testid="m-nav-reviews">Відгуки</a>
+        <a class="mobile-menu__link" href="#prozorro" data-testid="m-nav-prozorro">Prozorro</a>
+        <a class="mobile-menu__link" href="#contacts" data-testid="m-nav-contacts">Контакти</a>
+        <button type="button" class="btn btn--solid btn--block" data-open-popup data-testid="mobile-cta-btn">Надіслати запит</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero reveal" data-testid="hero-section">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__meta mono">
+          <span>HUBX / 001</span>
+          <span class="dot">•</span>
+          <span>IMPORT &amp; SUPPLY</span>
+          <span class="dot">•</span>
+          <span>B2B / GOV / NGO</span>
+        </div>
+
+        <h1 class="hero__title">
+          Імпорт <span class="hl">Autel</span>, <span class="hl">DJI</span> та <span class="hl">Starlink</span><br/>
+          для офіційних закупівель
+        </h1>
+
+        <p class="hero__sub">
+          Hubx постачає дрони, обладнання для зв'язку та супутні компоненти для військових частин, фондів, державних і комерційних організацій.
+        </p>
+
+        <p class="hero__text">
+          Ми працюємо як імпортер і постачальник для кінцевих замовників, а не як інтернет-магазин. Допомагаємо закривати потреби через тендери, офіційні запити, прямі договори та закупівлі через Prozorro.
+        </p>
+
+        <div class="hero__actions">
+          <button type="button" class="btn btn--solid btn--lg" data-open-popup data-testid="hero-cta-btn">
+            Надіслати запит
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </button>
+          <a class="btn btn--outline btn--lg" href="https://www.dzo.com.ua/tenders?keyword=hubx&page=1&perPage=10&sortOrder=dateCreated.desc" target="_blank" rel="noopener noreferrer" data-testid="hero-prozorro-btn">
+            Переглянути нас на Prozorro
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <ul class="hero__features" data-testid="hero-features">
+          <li><span class="mono">01</span> Autel / DJI / Starlink</li>
+          <li><span class="mono">02</span> Офіційні закупівлі</li>
+          <li><span class="mono">03</span> Робота з кінцевими замовниками</li>
+          <li><span class="mono">04</span> Документальний супровід</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--bordered reveal" id="about" data-testid="about-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 01</span>
+          <h2 class="section__title">Хто ми</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="lead">
+              Hubx — імпортер і постачальник професійного обладнання для організацій, яким потрібна техніка для реальних операційних, польових, інфраструктурних і спеціалізованих задач.
+            </p>
+            <p>
+              Ми працюємо з військовими частинами, благодійними фондами, державними структурами та комерційними організаціями. Основний фокус — постачання Autel, DJI, Starlink, аксесуарів та супутнього обладнання через офіційні канали закупівель.
+            </p>
+          </div>
+
+          <aside class="callout">
+            <div class="callout__label mono">[ Важливо ]</div>
+            <p class="callout__text">
+              Hubx — це <strong>не інтернет-магазин</strong>, а постачальник для організацій, які закуповують обладнання під конкретну потребу, технічне завдання або тендер.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPPLY ============ -->
+    <section class="section section--dark reveal" id="supply" data-testid="supply-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 02</span>
+          <h2 class="section__title">Що ми постачаємо</h2>
+          <p class="section__sub">
+            Ми імпортуємо обладнання для зв'язку, моніторингу, мобільної роботи та забезпечення команд у складних умовах.
+          </p>
+        </div>
+
+        <div class="cards cards--4">
+          <article class="card card--dark" data-testid="supply-card-autel">
+            <div class="card__top">
+              <span class="card__num mono">01</span>
+              <span class="card__tag mono">DRONES</span>
+            </div>
+            <h3 class="card__title">Autel</h3>
+            <p class="card__text">Дрони Autel, контролери, акумулятори, зарядні пристрої, аксесуари, запасні частини та супутні компоненти під запит.</p>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="15" cy="15" r="6"/><circle cx="45" cy="15" r="6"/><circle cx="15" cy="45" r="6"/><circle cx="45" cy="45" r="6"/><rect x="22" y="22" width="16" height="16"/><line x1="21" y1="21" x2="15" y2="15"/><line x1="39" y1="21" x2="45" y2="15"/><line x1="21" y1="39" x2="15" y2="45"/><line x1="39" y1="39" x2="45" y2="45"/></svg>
+            </div>
+          </article>
+
+          <article class="card card--dark" data-testid="supply-card-dji">
+            <div class="card__top">
+              <span class="card__num mono">02</span>
+              <span class="card__tag mono">DRONES</span>
+            </div>
+            <h3 class="card__title">DJI</h3>
+            <p class="card__text">Дрони DJI, пульти керування, акумулятори, зарядні станції, пропелери, кейси, аксесуари та комплектуючі.</p>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="30" cy="30" r="8"/><circle cx="12" cy="12" r="5"/><circle cx="48" cy="12" r="5"/><circle cx="12" cy="48" r="5"/><circle cx="48" cy="48" r="5"/><line x1="17" y1="17" x2="24" y2="24"/><line x1="43" y1="17" x2="36" y2="24"/><line x1="17" y1="43" x2="24" y2="36"/><line x1="43" y1="43" x2="36" y2="36"/></svg>
+            </div>
+          </article>
+
+          <article class="card card--dark" data-testid="supply-card-starlink">
+            <div class="card__top">
+              <span class="card__num mono">03</span>
+              <span class="card__tag mono">SATCOM</span>
+            </div>
+            <h3 class="card__title">Starlink</h3>
+            <p class="card__text">Комплекти Starlink, термінали, роутери, кабелі, кріплення, аксесуари живлення та монтажні рішення.</p>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M10 45 L50 25"/><path d="M14 50 L40 36"/><circle cx="50" cy="25" r="3"/><circle cx="14" cy="50" r="3"/><path d="M22 18 Q30 10 38 18"/><path d="M18 14 Q30 2 42 14"/></svg>
+            </div>
+          </article>
+
+          <article class="card card--dark" data-testid="supply-card-acc">
+            <div class="card__top">
+              <span class="card__num mono">04</span>
+              <span class="card__tag mono">EQUIPMENT</span>
+            </div>
+            <h3 class="card__title">Супутнє обладнання</h3>
+            <p class="card__text">Батареї, зарядні рішення, кабелі, кейси, монтажні компоненти, запасні частини та інша професійна електроніка під конкретний запит.</p>
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="10" y="20" width="30" height="20"/><rect x="40" y="26" width="6" height="8"/><line x1="14" y1="26" x2="36" y2="26"/><line x1="14" y1="34" x2="36" y2="34"/><line x1="20" y1="20" x2="20" y2="40"/></svg>
+            </div>
+          </article>
+        </div>
+
+        <p class="note mono" data-testid="supply-note">
+          [ NB ] Наявність, комплектація, строки та умови постачання уточнюються індивідуально під запит або тендер.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ AUDIENCE ============ -->
+    <section class="section section--bordered reveal" id="audience" data-testid="audience-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 03</span>
+          <h2 class="section__title">Для кого працює Hubx</h2>
+          <p class="section__sub">
+            Ми працюємо з організаціями, яким потрібен офіційний постачальник, зрозумілі документи, підтверджені строки та можливість закрити закупівлю під конкретну потребу.
+          </p>
+        </div>
+
+        <div class="cards cards--4">
+          <article class="card" data-testid="audience-card-1">
+            <div class="card__top">
+              <span class="card__num mono">A.01</span>
+              <span class="badge">B2G</span>
+            </div>
+            <h3 class="card__title">Військові частини</h3>
+            <p class="card__text">Постачання обладнання через тендери, офіційні закупівлі, договори та запити під конкретні потреби підрозділів.</p>
+          </article>
+
+          <article class="card" data-testid="audience-card-2">
+            <div class="card__top">
+              <span class="card__num mono">A.02</span>
+              <span class="badge">NGO</span>
+            </div>
+            <h3 class="card__title">Благодійні фонди</h3>
+            <p class="card__text">Допомагаємо фондам закуповувати та передавати обладнання кінцевим отримувачам у межах їхніх проєктів і програм підтримки.</p>
+          </article>
+
+          <article class="card" data-testid="audience-card-3">
+            <div class="card__top">
+              <span class="card__num mono">A.03</span>
+              <span class="badge">GOV</span>
+            </div>
+            <h3 class="card__title">Державні організації</h3>
+            <p class="card__text">Працюємо з офіційними закупівлями, документами, комерційними пропозиціями та супроводом постачання.</p>
+          </article>
+
+          <article class="card" data-testid="audience-card-4">
+            <div class="card__top">
+              <span class="card__num mono">A.04</span>
+              <span class="badge">B2B</span>
+            </div>
+            <h3 class="card__title">Комерційні організації</h3>
+            <p class="card__text">Постачаємо обладнання для корпоративних, інфраструктурних, польових, логістичних і проєктних задач.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section class="section section--bordered reveal" id="certificates" data-testid="certificates-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 04</span>
+          <h2 class="section__title">Сертифікати та документи</h2>
+          <p class="section__sub">
+            Документальний супровід постачання, офіційні дозволи та підтвердження. Повний пакет документів надається замовнику під конкретну закупівлю.
+          </p>
+        </div>
+
+        <div class="certs">
+          <div class="cert-placeholder" data-testid="cert-1" aria-label="Заглушка для сертифіката">
+            <div class="cert-placeholder__inner">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><rect x="6" y="6" width="28" height="28"/><line x1="6" y1="6" x2="34" y2="34"/><line x1="34" y1="6" x2="6" y2="34"/></svg>
+              <span class="mono">CERT / 01</span>
+            </div>
+          </div>
+          <div class="cert-placeholder" data-testid="cert-2" aria-label="Заглушка для сертифіката">
+            <div class="cert-placeholder__inner">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><rect x="6" y="6" width="28" height="28"/><line x1="6" y1="6" x2="34" y2="34"/><line x1="34" y1="6" x2="6" y2="34"/></svg>
+              <span class="mono">CERT / 02</span>
+            </div>
+          </div>
+          <div class="cert-placeholder" data-testid="cert-3" aria-label="Заглушка для сертифіката">
+            <div class="cert-placeholder__inner">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><rect x="6" y="6" width="28" height="28"/><line x1="6" y1="6" x2="34" y2="34"/><line x1="34" y1="6" x2="6" y2="34"/></svg>
+              <span class="mono">CERT / 03</span>
+            </div>
+          </div>
+          <div class="cert-placeholder" data-testid="cert-4" aria-label="Заглушка для сертифіката">
+            <div class="cert-placeholder__inner">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><rect x="6" y="6" width="28" height="28"/><line x1="6" y1="6" x2="34" y2="34"/><line x1="34" y1="6" x2="6" y2="34"/></svg>
+              <span class="mono">CERT / 04</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="note mono">[ Зображення сертифікатів — заглушки. Документи надаються за офіційним запитом ]</p>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section section--bordered reveal" id="reviews" data-testid="reviews-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 05</span>
+          <h2 class="section__title">Відгуки партнерів</h2>
+          <p class="section__sub">
+            Ми цінуємо довгострокову співпрацю та прозору комунікацію з організаціями, для яких постачаємо обладнання.
+          </p>
+        </div>
+
+        <div class="reviews">
+          <figure class="review" data-testid="review-1">
+            <div class="review__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="review__text">
+              Hubx допомогли оперативно закрити запит на обладнання, підготували зрозумілі документи та супроводжували процес до моменту отримання.
+            </blockquote>
+            <figcaption class="review__caption">
+              <span class="review__line" aria-hidden="true"></span>
+              <span class="mono">Благодійний фонд</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review" data-testid="review-2">
+            <div class="review__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="review__text">
+              Команда швидко опрацювала наш запит, запропонувала релевантне рішення та забезпечила комунікацію на всіх етапах постачання.
+            </blockquote>
+            <figcaption class="review__caption">
+              <span class="review__line" aria-hidden="true"></span>
+              <span class="mono">Комерційна організація</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review" data-testid="review-3">
+            <div class="review__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="review__text">
+              Для нас було важливо отримати не просто товар, а постачальника, який розуміє документи, строки та вимоги офіційної закупівлі.
+            </blockquote>
+            <figcaption class="review__caption">
+              <span class="review__line" aria-hidden="true"></span>
+              <span class="mono">Офіційний замовник</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROZORRO ============ -->
+    <section class="section section--dark reveal" id="prozorro" data-testid="prozorro-section">
+      <div class="container">
+        <div class="prozorro">
+          <div class="prozorro__head">
+            <span class="section__index mono">/ 06</span>
+            <h2 class="section__title">Ми працюємо через офіційні закупівлі</h2>
+            <p class="section__sub">
+              Hubx бере участь у закупівлях через Prozorro та працює з організаціями, яким важлива прозорість, документи та офіційний процес постачання.
+            </p>
+            <p class="prozorro__text">
+              Потенційні замовники можуть перевірити інформацію про компанію, участь у закупівлях та публічні дані у відкритих джерелах.
+            </p>
+
+            <div class="prozorro__actions">
+              <a class="btn btn--solid-light btn--lg" href="https://www.dzo.com.ua/tenders?keyword=hubx&page=1&perPage=10&sortOrder=dateCreated.desc" target="_blank" rel="noopener noreferrer" data-testid="prozorro-link-btn">
+                Переглянути Hubx на Prozorro
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+              <button type="button" class="btn btn--outline-light btn--lg" data-open-popup data-testid="prozorro-cta-btn">
+                Надіслати запит
+                <span class="btn__arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <ul class="prozorro__list">
+            <li><span class="mono">01</span> Робота з тендерами</li>
+            <li><span class="mono">02</span> Підготовка комерційних пропозицій</li>
+            <li><span class="mono">03</span> Документальний супровід</li>
+            <li><span class="mono">04</span> Постачання під конкретне технічне завдання</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section--bordered reveal" id="process" data-testid="process-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 07</span>
+          <h2 class="section__title">Як проходить постачання</h2>
+          <p class="section__sub">
+            Ми супроводжуємо замовника від первинного запиту до передачі обладнання.
+          </p>
+        </div>
+
+        <ol class="process">
+          <li class="process__step" data-testid="process-step-1">
+            <span class="process__num mono">01</span>
+            <h3 class="process__title">Ви надсилаєте запит</h3>
+            <p class="process__text">Описуєте, яке обладнання потрібно, орієнтовну кількість, строки та формат закупівлі.</p>
+          </li>
+          <li class="process__step" data-testid="process-step-2">
+            <span class="process__num mono">02</span>
+            <h3 class="process__title">Ми уточнюємо потребу</h3>
+            <p class="process__text">Перевіряємо технічні вимоги, комплектацію, документи та особливості закупівлі.</p>
+          </li>
+          <li class="process__step" data-testid="process-step-3">
+            <span class="process__num mono">03</span>
+            <h3 class="process__title">Підбираємо обладнання</h3>
+            <p class="process__text">Підбираємо Autel, DJI, Starlink або супутнє обладнання відповідно до запиту.</p>
+          </li>
+          <li class="process__step" data-testid="process-step-4">
+            <span class="process__num mono">04</span>
+            <h3 class="process__title">Готуємо пропозицію</h3>
+            <p class="process__text">Формуємо комерційну пропозицію, тендерну інформацію або умови для прямого договору.</p>
+          </li>
+          <li class="process__step" data-testid="process-step-5">
+            <span class="process__num mono">05</span>
+            <h3 class="process__title">Узгоджуємо постачання</h3>
+            <p class="process__text">Погоджуємо строки, документи, логістику та порядок передачі обладнання.</p>
+          </li>
+          <li class="process__step" data-testid="process-step-6">
+            <span class="process__num mono">06</span>
+            <h3 class="process__title">Передаємо обладнання</h3>
+            <p class="process__text">Забезпечуємо постачання та супровід до моменту отримання замовником.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT FORM ============ -->
+    <section class="section section--bordered reveal" id="contacts" data-testid="contact-section">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index mono">/ 08</span>
+          <h2 class="section__title">Надіслати запит на постачання</h2>
+          <p class="section__sub">
+            Опишіть, яке обладнання вам потрібно, у якій кількості та в якому форматі планується закупівля. Ми перевіримо можливість постачання та підготуємо відповідь.
+          </p>
+        </div>
+
+        <form class="form" id="request-form" novalidate data-testid="request-form">
+          <div class="form__grid">
+            <div class="field">
+              <label for="f-name">Ім'я *</label>
+              <input id="f-name" type="text" name="name" required data-testid="form-name" placeholder="Введіть ваше ім'я" />
+            </div>
+
+            <div class="field">
+              <label for="f-org">Організація</label>
+              <input id="f-org" type="text" name="organization" data-testid="form-org" placeholder="Назва організації" />
+            </div>
+
+            <div class="field">
+              <label for="f-org-type">Тип організації *</label>
+              <select id="f-org-type" name="org_type" required data-testid="form-org-type">
+                <option value="">Оберіть тип</option>
+                <option>Військова частина</option>
+                <option>Благодійний фонд</option>
+                <option>Державна організація</option>
+                <option>Комерційна організація</option>
+                <option>Інше</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email *</label>
+              <input id="f-email" type="email" name="email" required data-testid="form-email" placeholder="name@example.com" />
+            </div>
+
+            <div class="field">
+              <label for="f-phone">Телефон / месенджер *</label>
+              <input id="f-phone" type="tel" name="phone" required data-testid="form-phone" placeholder="+380 ..." />
+            </div>
+
+            <div class="field field--full">
+              <label>Що потрібно</label>
+              <div class="checkboxes" data-testid="form-needs">
+                <label class="check"><input type="checkbox" name="need" value="Autel" /> <span>Autel</span></label>
+                <label class="check"><input type="checkbox" name="need" value="DJI" /> <span>DJI</span></label>
+                <label class="check"><input type="checkbox" name="need" value="Starlink" /> <span>Starlink</span></label>
+                <label class="check"><input type="checkbox" name="need" value="Аксесуари" /> <span>Аксесуари</span></label>
+                <label class="check"><input type="checkbox" name="need" value="Інше" /> <span>Інше</span></label>
+              </div>
+            </div>
+
+            <div class="field field--full">
+              <label for="f-model">Модель / опис обладнання</label>
+              <input id="f-model" type="text" name="model" data-testid="form-model" placeholder="Наприклад: Autel EVO Max 4T, 5 шт." />
+            </div>
+
+            <div class="field">
+              <label for="f-qty">Кількість</label>
+              <input id="f-qty" type="text" name="qty" data-testid="form-qty" placeholder="Орієнтовна к-сть" />
+            </div>
+
+            <div class="field">
+              <label for="f-format">Формат закупівлі</label>
+              <select id="f-format" name="format" data-testid="form-format">
+                <option value="">Оберіть формат</option>
+                <option>Prozorro / тендер</option>
+                <option>Прямий договір</option>
+                <option>Запит від фонду</option>
+                <option>Комерційна закупівля</option>
+                <option>Поки уточнюємо</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-terms">Бажані строки</label>
+              <input id="f-terms" type="text" name="terms" data-testid="form-terms" placeholder="Наприклад: до 30 днів" />
+            </div>
+
+            <div class="field field--full">
+              <label for="f-comment">Коментар</label>
+              <textarea id="f-comment" name="comment" rows="4" data-testid="form-comment" placeholder="Додаткові вимоги, технічне завдання, нотатки"></textarea>
+            </div>
+          </div>
+
+          <div class="form__footer">
+            <button type="submit" class="btn btn--solid btn--lg" data-testid="form-submit-btn">
+              Надіслати запит
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </button>
+            <p class="form__note mono">Натискаючи кнопку, ви погоджуєтесь на обробку даних для відповіді на ваш запит.</p>
+          </div>
+
+          <div class="form__success" id="form-success" data-testid="form-success" hidden>
+            <div class="form__success-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="20" cy="20" r="18"/><path d="M12 20 L18 26 L28 14"/></svg>
+            </div>
+            <h3>Дякуємо! Ми зв'яжемося з вами найближчим часом.</h3>
+            <p>Ваш запит отримано. Команда Hubx опрацює його та надішле відповідь.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#top" class="logo logo--light" data-testid="footer-logo">
+            <span class="logo__mark">[</span>Hubx<span class="logo__mark">]</span>
+          </a>
+          <p class="footer__desc">
+            Hubx — імпортер Autel, DJI, Starlink та супутнього обладнання для військових частин, фондів, державних і комерційних організацій.
+          </p>
+          <button type="button" class="btn btn--solid-light btn--md" data-open-popup data-testid="footer-cta-btn">
+            Надіслати запит
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4 class="footer__title mono">Навігація</h4>
+            <ul>
+              <li><a href="#about">Хто ми</a></li>
+              <li><a href="#supply">Що постачаємо</a></li>
+              <li><a href="#audience">Для кого</a></li>
+              <li><a href="#reviews">Відгуки</a></li>
+              <li><a href="#prozorro">Prozorro</a></li>
+              <li><a href="#contacts">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title mono">Категорії</h4>
+            <ul>
+              <li><a href="#supply">Autel</a></li>
+              <li><a href="#supply">DJI</a></li>
+              <li><a href="#supply">Starlink</a></li>
+              <li><a href="#supply">Аксесуари</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title mono">Контакти</h4>
+            <ul class="footer__contacts">
+              <li>
+                <span class="mono footer__label">Tel</span>
+                <a href="tel:+380501111111" data-testid="footer-phone">+38 050 111 11 11</a>
+              </li>
+              <li>
+                <span class="mono footer__label">E-mail</span>
+                <a href="mailto:hubx-info@gmail.com" data-testid="footer-email">hubx-info@gmail.com</a>
+              </li>
+              <li>
+                <span class="mono footer__label">Месенджери</span>
+                <span class="socials" data-testid="footer-socials">
+                  <a href="#" aria-label="Telegram" class="social">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 4 L2 11 L9 14 L12 21 L21 4 Z"/><path d="M9 14 L21 4"/></svg>
+                  </a>
+                  <a href="#" aria-label="Viber" class="social">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 3 H19 A2 2 0 0 1 21 5 V15 A2 2 0 0 1 19 17 H14 L10 21 V17 H5 A2 2 0 0 1 3 15 V5 A2 2 0 0 1 5 3 Z"/></svg>
+                  </a>
+                  <a href="#" aria-label="WhatsApp" class="social">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M8 10 Q8 14 12 16 Q14 17 16 15 L14 13 L12 14 Q10 13 10 11 L11 9 L9 7 Q7 8 8 10 Z"/></svg>
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="mono">© <span id="year">2025</span> Hubx. Усі права захищено.</span>
+        <ul class="footer__legal">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ POPUP ============ -->
+  <div class="popup" id="request-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="popup-title" data-testid="request-popup">
+    <div class="popup__overlay" data-close-popup></div>
+
+    <div class="popup__dialog" role="document">
+      <button type="button" class="popup__close" aria-label="Закрити" data-close-popup data-testid="popup-close-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+
+      <div class="popup__head">
+        <span class="mono popup__index">/ FORM</span>
+        <h2 id="popup-title" class="popup__title">Надіслати запит</h2>
+        <p class="popup__sub">Залиште контакти, і ми зв'яжемося з вами для уточнення потреби та формату закупівлі.</p>
+      </div>
+
+      <form class="popup__form" id="popup-form" novalidate data-testid="popup-form">
+        <div class="field">
+          <label for="p-name">Ім'я *</label>
+          <input id="p-name" type="text" name="name" required data-testid="popup-name" placeholder="Введіть ваше ім'я" />
+        </div>
+        <div class="field">
+          <label for="p-phone">Телефон *</label>
+          <input id="p-phone" type="tel" name="phone" required data-testid="popup-phone" placeholder="Введіть номер телефону" />
+        </div>
+        <div class="field">
+          <label for="p-who">Хто ви? *</label>
+          <select id="p-who" name="who" required data-testid="popup-who">
+            <option value="">Оберіть варіант</option>
+            <option>Військова частина</option>
+            <option>Благодійний фонд</option>
+            <option>Державна організація</option>
+            <option>Комерційна організація</option>
+            <option>Інше</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn--solid btn--block btn--lg" data-testid="popup-submit-btn">
+          Надіслати
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </button>
+        <p class="popup__note mono">Натискаючи кнопку, ви погоджуєтесь на обробку даних для відповіді на ваш запит.</p>
+      </form>
+
+      <div class="popup__success" id="popup-success" data-testid="popup-success" hidden>
+        <div class="popup__success-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="20" cy="20" r="18"/><path d="M12 20 L18 26 L28 14"/></svg>
+        </div>
+        <h3>Дякуємо!</h3>
+        <p>Ми зв'яжемося з вами найближчим часом.</p>
+        <button type="button" class="btn btn--outline btn--md" data-close-popup data-testid="popup-success-close">Закрити</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
